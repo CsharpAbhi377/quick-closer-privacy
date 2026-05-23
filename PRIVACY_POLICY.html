@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Zendesk Quick Closer</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.65;
+      color: #1a1814;
+      background: #f4ede1;
+    }
+    h1 { font-size: 28px; margin-bottom: 0.2em; }
+    h2 { font-size: 18px; margin-top: 2em; border-bottom: 2px solid #1a1814; padding-bottom: 4px; }
+    .meta { color: #524c40; font-size: 14px; margin-bottom: 2em; }
+    code { background: #ebe2d2; padding: 2px 6px; font-size: 90%; }
+    strong { color: #ff4d1f; }
+    .panel { background: #fffaf0; border-left: 4px solid #ff4d1f; padding: 12px 16px; margin: 1.5em 0; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy — Zendesk Quick Closer</h1>
+<p class="meta">Last updated: 12 May 2026</p>
+
+<div class="panel">
+  <strong>The short version:</strong> Zendesk Quick Closer does not collect,
+  transmit, or store any data outside of your own browser. There are no
+  network calls, no telemetry, no analytics, no third-party services.
+  Every byte of data the extension uses stays on your computer.
+</div>
+
+<h2>What data the extension handles</h2>
+
+<p>
+  The extension reads and interacts with the following information,
+  strictly on the user's local computer:
+</p>
+
+<ul>
+  <li>
+    <strong>Zendesk form fields</strong> — when you click "Apply" or
+    "Read options from page," the extension reads the labels and
+    dropdown options of the ticket form on your currently active
+    Zendesk tab. This is used to identify which form fields to fill.
+  </li>
+  <li>
+    <strong>Preset configurations</strong> — the named presets you
+    create are stored locally in <code>chrome.storage.local</code>.
+  </li>
+  <li>
+    <strong>Cached dropdown options</strong> — to populate the
+    extension's own dropdowns without requiring re-scan each time.
+  </li>
+  <li>
+    <strong>Usage statistics</strong> — a count of how many times each
+    preset has been applied, stored locally. Used to populate the Stats
+    tab. Capped at 2,000 events.
+  </li>
+  <li>
+    <strong>Last-applied selections and floating-button position</strong>
+    — UI state remembered between sessions.
+  </li>
+</ul>
+
+<h2>What the extension does NOT do</h2>
+
+<ul>
+  <li>It does <strong>not</strong> read ticket comments, customer
+  information, ticket subject, ticket body, or any other content
+  outside of the form's dropdown field labels.</li>
+  <li>It does <strong>not</strong> make any network requests to any
+  server, ever. No analytics. No crash reporting. No update pings.</li>
+  <li>It does <strong>not</strong> use cookies, third-party scripts,
+  or remote resources.</li>
+  <li>It does <strong>not</strong> share data with the developer,
+  HotDoc, Anthropic, or any other party.</li>
+</ul>
+
+<h2>Data export and deletion</h2>
+
+<p>
+  You can export your local usage statistics as a CSV file via the
+  Stats tab. You can clear all stats via the same tab. You can export
+  and import presets as JSON via the Presets tab. Uninstalling the
+  extension removes all extension data from your browser.
+</p>
+
+<h2>Permissions used</h2>
+
+<ul>
+  <li><strong>storage</strong> — to save your presets and settings.</li>
+  <li><strong>activeTab</strong> — to read the active Zendesk tab's
+  form structure when you click Apply.</li>
+  <li><strong>scripting</strong> — to re-inject the content script
+  after extension updates.</li>
+  <li><strong>host_permissions: *.zendesk.com</strong> — the extension
+  only operates on Zendesk Agent pages.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+
+<p>
+  This is a B2B productivity tool intended for adult support agents.
+  It is not directed at children.
+</p>
+
+<h2>Changes to this policy</h2>
+
+<p>
+  If this policy changes, the updated version will replace this page
+  and the "Last updated" date above will reflect the change.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+  Questions about privacy or the extension: <em>add your contact email
+  or HotDoc support address here before publishing.</em>
+</p>
+
+</body>
+</html>
